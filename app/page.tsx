@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { getDustData } from "@/utils/fetchDust";
+import { getDustData } from "../utils/fetchDust";
 
 export default function Home() {
   const [dust, setDust] = useState<any>(null);
@@ -11,6 +11,10 @@ export default function Home() {
 
   return (
     <div className="p-6">
+      <div>
+         <h1 className="text-2xl font-bold">홈 페이지</h1>
+          <p>미세먼지 정보를 확인할 수 있는 웹사이트입니다.</p>
+      </div>
       <h1 className="text-xl font-bold">미세먼지 농도</h1>
       {dust ? <p>현재 미세먼지: {dust.list[0].pm10Value}㎍/m³</p> : <p>로딩 중...</p>}
     </div>
