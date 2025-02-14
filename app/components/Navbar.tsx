@@ -9,17 +9,17 @@ export default function Navbar() {
     <nav className="bg-blue-600 text-white p-4">
       <ul className="flex space-x-6">
         <li>
-          <Link href="/" className={pathname === "/" ? "font-bold" : ""}>
+          <Link href="/">
             홈
           </Link>
         </li>
         <li>
-          <Link href="/login" className={pathname === "/login" ? "font-bold" : ""}>
+          <Link href="/login">
             LOGIN
           </Link>
         </li>
         <li>
-          <Link href="/join" className={pathname === "/join" ? "font-bold" : ""}>
+          <Link href="/join">
             JOIN
           </Link>
         </li>

@@ -1,8 +1,11 @@
-export default function Login() {
-    return (
-      <div>
-        <h1 className="text-2xl font-bold">로그인</h1>
-        <p>로그인 페이지입니다.</p>
-      </div>
-    );
-  }
+import LoginButton from "@/components/LoginButton";
+import "../styles/global.module.css"; // 일반 CSS 적용
+
+export default function LoginPage() {
+  return (
+    <div className="login-container">
+      <h1>로그인 페이지</h1>
+      <LoginButton />
+    </div>
+  );
+}
