@@ -1,5 +1,5 @@
 import LoginButton from "@/components/LoginButton";
-import "../styles/global.module.css"; // 일반 CSS 적용
+import "../styles/global.css"; // 일반 CSS 적용
 
 export default function LoginPage() {
   return (

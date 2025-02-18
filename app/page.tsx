@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="p-6">
+    <div>
       <div>
       <h1>홈 페이지</h1>
       <p>여기는 메인 화면입니다.</p>
@@ -19,7 +19,7 @@ export default function Home() {
         <button>로그인 하러 가기</button>
       </Link>
     </div>
-      <h1 className="text-xl font-bold">미세먼지 농도</h1>
+      <h1>미세먼지 농도</h1>
       {dust ? <p>현재 미세먼지: {dust.list[0].pm10Value}㎍/m³</p> : <p>로딩 중...</p>}
     </div>
   );
